@@ -13,8 +13,15 @@ namespace BeerHallEF.Models
         public decimal Price { get; set; }
         #endregion
 
-        public Beer()
+        #region Constructors
+
+        protected Beer() { }
+
+        public Beer(string name, decimal price)
         {
+            Name = Name;
+            Price = price;
         }
+        #endregion
     }
 }
