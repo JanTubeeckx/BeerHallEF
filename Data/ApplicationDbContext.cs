@@ -22,6 +22,7 @@ namespace BeerHallEF.Data
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new BrewerConfiguration());
             modelBuilder.ApplyConfiguration(new BeerConfiguration());
+            modelBuilder.ApplyConfiguration(new LocationConfiguration());
         }
     }
 }
