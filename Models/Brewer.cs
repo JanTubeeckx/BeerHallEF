@@ -19,6 +19,10 @@ namespace BeerHallEF.Models
         public int NrOfBeers => Beers.Count;
         #endregion
 
+        #region Navigational properties
+        public Location Location { get; set; }
+        #endregion
+
         public Brewer()
         {
             Beers = new HashSet<Beer>();
